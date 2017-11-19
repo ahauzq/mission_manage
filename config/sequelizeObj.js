@@ -13,19 +13,6 @@ var sequelizeObj = new Sequelize(
         }
     }
 );
-/*var sequelizeObj = new Sequelize(
-    'message_board',    //数据库名
-    'root',             //用户名
-    'root',             //密码
-    {
-        'dialect': 'mysql',
-        'host': '10.0.200.145',
-        'port': 3306,
-        'define':{
-            'timestamps':false,
-            'freezeTableName':false
-        }
-    }
-);*/
+
 
 module.exports = sequelizeObj;
