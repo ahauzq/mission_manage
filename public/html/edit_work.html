@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>编辑工作内容</title>
+		<link rel="stylesheet" href="/oasisl/css/oasisl.css">
+    	<link rel="stylesheet" href="/oasisl/css/oasicon.css">
+    	<link rel="stylesheet" href="/css/fullcalendar.min.css" />
+<!--     	<link rel="stylesheet" href="/css/jquery-ui.min.css" /> -->
+		<link rel="stylesheet" href="/css/detail.css">
+		<link rel="stylesheet" type="text/css" href="/css/edit_work.css">
+		<script src="/oasisl/js/lib/require.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header class="header1 clearfix">
+				<div class="header-logo">
+					<span>FRONT-END</span>
+					<span>DEVELOPMENT WORK</span>
+				</div>
+				<div class="header-user">
+					<span class="header-account">Hi,<i id="userName"></i></span>
+					<span class="oasicon oasicon-skip" data-action="quitSystem" title="跳转至详情页"></span>
+				</div>
+			</header>
+			<header class="header2 clearfix">
+				<div class="generate-report" data-action="generateReport" id="wwo">生成周报</div>
+				<div class="toggle-time clearfix">
+					添加我的工作任务<i class="oasicon oasicon-help"  data-oaspopover-placement="bottom" data-oaspopover-content="计划任务：如果接到一个项目，项目周期1个月，那这种就框选一个月，选择计划任务 <br />实际任务: 每天都要填写的" data-oaspopover-trigger="hover"></i>
+				</div>
+				<!-- <div class="edit-work" data-action="editWork">编辑我的工作内容</div> -->
+			</header>
+			<section>
+				<div id='loading'>loading...</div>
+				<div id='calendar'></div>
+			</section>	
+			
+		</div>
+		
+	</body>
+	<script>
+	require(["/oasisl/js/oasisl.js"],function(){
+		require(["/js/edit_work.js"],function(app){
+		});
+	});
+	</script>
+</html>

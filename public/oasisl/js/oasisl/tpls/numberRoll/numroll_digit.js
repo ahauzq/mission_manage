@@ -1,0 +1,1 @@
+define(["../template",""],function(e){return e("numberRoll/numroll_digit",function(e){"use strict";var t=this,n=(t.$helpers,t.$escape),r=e.type,i=e.name,s="";return s+='<div class="oas-number oas-',s+=n(r),s+='-number"> <div class="oas-',s+=n(r),s+='-number-wrap"> <div class="oas-number-text oas-number-content">',s+=n(i),s+="</div> </div> </div>",new String(s)})});

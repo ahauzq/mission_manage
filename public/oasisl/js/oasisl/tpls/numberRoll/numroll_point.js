@@ -1,0 +1,1 @@
+define(["../template",""],function(e){return e("numberRoll/numroll_point",function(e){"use strict";var t=this,n=(t.$helpers,t.$escape),r=e.type,i="";return i+='<div class="oas-number oas-',i+=n(r),i+='-number"> <div class="oas-',i+=n(r),i+='-number-wrap"> <div class="oas-number-text oas-number-content">.</div> </div> </div>',new String(i)})});

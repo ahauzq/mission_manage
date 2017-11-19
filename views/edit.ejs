@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NodeJs留言板</title>
+</head>
+<body>
+<h3>修改留言</h3>
+<form method="post" action="/edit/update_msg">
+    <input type="hidden" name="id" value="<%=message.id %>">
+    名字:&nbsp;&nbsp;<input name="username" type="text" value="<%=message.username %>"><br/><br/>
+    留言:&nbsp;&nbsp;<textarea name="content"><%=message.content %></textarea><br/><br/>
+    <input type="submit" value="提交修改"/>
+</form>
+</body>
+</html>

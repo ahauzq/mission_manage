@@ -1,0 +1,1 @@
+<input class="oas-number-roll-val" type="hidden" value="0">

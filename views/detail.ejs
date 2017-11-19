@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>详细信息</title>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/detail.css">
+		<script src="/oasisl/js/lib/require.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header class="header1 clearfix">
+				<div class="header-logo">
+					<span>FRONT-END</span>
+					<span>DEVELOPMENT WORK</span>
+				</div>
+				<div class="header-user">
+					<span class="header-account">Hi,<i>Admin</i></span>
+					<span class="header-exit"></span>
+				</div>
+			</header>
+			<header class="header2 clearfix">
+				<div class="generate-report">生成周报</div>
+				<div class="toggle-time clearfix">
+					<span class="toggle-left toggle-btn"> < </span>
+					<span class="toggle-content">三个月内工作计划统计</span>
+					<span class="toggle-right toggle-btn"> > </span>
+				</div>
+				<div class="edit-work">编辑我的工作内容</div>
+			</header>
+			<section>
+				<div class="sidebar">
+					<div class="sidebar-header">人员列表</div>
+					<ul class="sidebar-content"></ul>
+				</div>
+				<div class="content clearfix">
+					<div class="content-wrap clearfix">
+						
+					</div>
+				</div>
+			</section>	
+			
+		</div>
+		
+	</body>
+	<script>
+	require(["/oasisl/js/oasisl.js"],function(){
+		require(["/js/detail.js"],function(app){
+			app.init();
+		});
+	});
+	</script>
+</html>

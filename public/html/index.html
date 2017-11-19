@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NodeJs留言板</title>
+  </head>
+  <body>
+    <h1>NodeJs留言板</h1>
+    <h3>发表留言</h3>
+    <form method="post" action="/add_msg">
+        你的名字:&nbsp;&nbsp;<input name="username" type="text"><br/><br/>
+        留言内容:&nbsp;&nbsp;<textarea name="content"></textarea><br/><br/>
+        <input type="submit" value="发表留言"/>
+    </form>
+    <h3>留言版</h3>
+    <hr/>
+    <% for(var i = messages.length - 1; i>=0; i--) {%> <!-- ejs for循环输出留言板内容 -->
+    <b>名字:</b>&nbsp;&nbsp;&nbsp;&nbsp;<%=messages[i].username %><br/>
+    <b>内容:</b><br/>
+    <%=messages[i].content %><br/>
+    <a href="/find_one?id=<%=messages[i].id %>">编辑留言</a>&nbsp;&nbsp;&nbsp;<a href="/del_msg?id=<%=messages[i].id %>">删除留言</a>
+    <hr/>
+    <% } %>
+  </body>
+</html>

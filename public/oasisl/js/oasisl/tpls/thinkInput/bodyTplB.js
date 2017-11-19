@@ -1,0 +1,1 @@
+define(["../template",""],function(e){return e("thinkInput/bodyTplB",function(e){"use strict";var t=this,n=(t.$helpers,t.$each),r=e.list,i=(e.$value,e.$index,t.$escape),s=t.$string,o="";return o+="<div> <ul> ",n(r,function(e,t){o+=' <li class="associate-item" index=',o+=i(t),o+=' title="',o+=i(e.title),o+='">',o+=s(e.label),o+="</li> "}),o+=" </ul> </div>",new String(o)})});

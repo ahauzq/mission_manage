@@ -1,0 +1,1 @@
+define([],function(){var e={getPosition:function(e,t,n){var r=e.outerHeight(),i=e.outerWidth(),s=e.offset().left,o=e.offset().top,u=t.outerHeight(),a=t.outerWidth(),f;return n==="right"&&(f={left:i+s+10,top:r/2+o-u/2}),n==="left"&&(f={left:s-a-10,top:r/2+o-u/2}),n==="top"&&(f={left:s-(a/2-i/2),top:o-u-10}),n==="bottom"&&(f={left:s-(a/2-i/2),top:o+r+10}),f}};return e});

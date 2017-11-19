@@ -1,0 +1,1 @@
+define(["../template",""],function(e){return e("numberRoll/numroll_value",'<input class="oas-number-roll-val" type="hidden" value="0">')});

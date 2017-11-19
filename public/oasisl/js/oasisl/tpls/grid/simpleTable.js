@@ -1,0 +1,1 @@
+define(["../template",""],function(e){return e("grid/simpleTable",'<div class="oas-grid oas-grid-simple"> </div>')});

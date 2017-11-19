@@ -1,0 +1,8 @@
+<li class="level{{$data.level}}{{if $data.disabled}} node-disabled{{/if}}" nodeid="{{$data.id}}" pid="{{$data.pid}}">
+	<span class="{{if $data.isParent}}{{if $data.level == 0 && $data.isFirstNode}}{{if $data.mutiTop}}roots{{else}}root{{/if}}{{if $data.isOpen}}-open{{else}}-close{{/if}}{{else}}{{if $data.isLastNode}}bottom{{else}}center{{/if}}{{if $data.isOpen}}-open{{else}}-close{{/if}}{{/if}}{{else}}{{if $data.isLastNode}}{{if $data.isFirstNode && $data.level == 0}}root{{else}}bottom{{/if}}{{else if $data.isFirstNode && $data.level ==0}}roots{{else}}center{{/if}}-docu{{/if}}"></span>
+	<input {{if $data.checkType == 'radio'}}name="oastree-radio"{{/if}} {{if $data.checked}}checked="checked"{{/if}} {{if $data.disabled}}disabled="disabled"{{/if}} type="{{if $data.checkType == 'checkbox'}}checkbox{{else if $data.checkType == 'radio'}}radio{{/if}}" class="{{if $data.checkType == null}}chk-hide{{/if}}">
+	<a href="javascript:;" class="{{if $data.selected}}current{{/if}}">
+		<i class="{{if $data.isParent}}{{if $data.icon && $data.icon.length >0}}{{$data.icon}}{{else}}oasicon oasicon-folder{{/if}}{{else}}{{if $data.icon && $data.icon.length >0}}{{$data.icon}}{{else}}oasicon oasicon-details{{/if}}{{/if}}{{if $data.level == 0}} node-top{{/if}}{{if $data.isParent}} bigger{{/if}}"></i>
+		<span {{if $data.isParent}}class="bigger"{{/if}}>{{$data.label}}</span>
+	</a>
+	<ul class="{{if !$data.isParent}}ul-hide{{/if}}{{if !$data.isLastNode}} line{{/if}}">
